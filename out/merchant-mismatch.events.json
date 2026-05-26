@@ -1,8 +1,9 @@
 [
   {
     "run_id": "run-merchant-mismatch-001",
+    "sequence": 1,
     "type": "policy_loaded",
-    "at": "2026-05-26T20:57:45.875Z",
+    "at": "dry-run-sequence-001",
     "data": {
       "max_budget_usd": 40,
       "allowed_merchants": [
@@ -18,8 +19,9 @@
   },
   {
     "run_id": "run-merchant-mismatch-001",
+    "sequence": 2,
     "type": "candidate_selected",
-    "at": "2026-05-26T20:57:45.875Z",
+    "at": "dry-run-sequence-002",
     "data": {
       "merchant": "Lookalike Testing Tool",
       "item": "starter test plan",
@@ -29,16 +31,18 @@
   },
   {
     "run_id": "run-merchant-mismatch-001",
+    "sequence": 3,
     "type": "checkout_total_seen",
-    "at": "2026-05-26T20:57:45.875Z",
+    "at": "dry-run-sequence-003",
     "data": {
       "checkout_total_usd": 19
     }
   },
   {
     "run_id": "run-merchant-mismatch-001",
+    "sequence": 4,
     "type": "policy_checked",
-    "at": "2026-05-26T20:57:45.875Z",
+    "at": "dry-run-sequence-004",
     "data": {
       "merchant_allowed": false,
       "category_allowed": true,
@@ -50,8 +54,9 @@
   },
   {
     "run_id": "run-merchant-mismatch-001",
+    "sequence": 5,
     "type": "decision_recorded",
-    "at": "2026-05-26T20:57:45.875Z",
+    "at": "dry-run-sequence-005",
     "data": {
       "decision": "rejected",
       "reason": "Candidate merchant is not on the allowed merchants list."

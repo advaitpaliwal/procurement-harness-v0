@@ -1,8 +1,9 @@
 [
   {
     "run_id": "run-over-budget-001",
+    "sequence": 1,
     "type": "policy_loaded",
-    "at": "2026-05-26T20:57:45.876Z",
+    "at": "dry-run-sequence-001",
     "data": {
       "max_budget_usd": 25,
       "allowed_merchants": [
@@ -19,8 +20,9 @@
   },
   {
     "run_id": "run-over-budget-001",
+    "sequence": 2,
     "type": "candidate_selected",
-    "at": "2026-05-26T20:57:45.876Z",
+    "at": "dry-run-sequence-002",
     "data": {
       "merchant": "BrowserStack",
       "item": "monthly team plan",
@@ -30,16 +32,18 @@
   },
   {
     "run_id": "run-over-budget-001",
+    "sequence": 3,
     "type": "checkout_total_seen",
-    "at": "2026-05-26T20:57:45.876Z",
+    "at": "dry-run-sequence-003",
     "data": {
       "checkout_total_usd": 199
     }
   },
   {
     "run_id": "run-over-budget-001",
+    "sequence": 4,
     "type": "policy_checked",
-    "at": "2026-05-26T20:57:45.876Z",
+    "at": "dry-run-sequence-004",
     "data": {
       "merchant_allowed": true,
       "category_allowed": true,
@@ -51,8 +55,9 @@
   },
   {
     "run_id": "run-over-budget-001",
+    "sequence": 5,
     "type": "decision_recorded",
-    "at": "2026-05-26T20:57:45.876Z",
+    "at": "dry-run-sequence-005",
     "data": {
       "decision": "rejected",
       "reason": "Candidate price exceeds the maximum budget."

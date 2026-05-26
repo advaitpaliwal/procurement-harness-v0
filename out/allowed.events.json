@@ -1,8 +1,9 @@
 [
   {
     "run_id": "run-allowed-001",
+    "sequence": 1,
     "type": "policy_loaded",
-    "at": "2026-05-26T20:57:45.872Z",
+    "at": "dry-run-sequence-001",
     "data": {
       "max_budget_usd": 20,
       "allowed_merchants": [
@@ -19,8 +20,9 @@
   },
   {
     "run_id": "run-allowed-001",
+    "sequence": 2,
     "type": "candidate_selected",
-    "at": "2026-05-26T20:57:45.873Z",
+    "at": "dry-run-sequence-002",
     "data": {
       "merchant": "Cloudflare Registrar",
       "item": "procurement-harness-demo.example",
@@ -30,16 +32,18 @@
   },
   {
     "run_id": "run-allowed-001",
+    "sequence": 3,
     "type": "checkout_total_seen",
-    "at": "2026-05-26T20:57:45.873Z",
+    "at": "dry-run-sequence-003",
     "data": {
       "checkout_total_usd": 12
     }
   },
   {
     "run_id": "run-allowed-001",
+    "sequence": 4,
     "type": "policy_checked",
-    "at": "2026-05-26T20:57:45.873Z",
+    "at": "dry-run-sequence-004",
     "data": {
       "merchant_allowed": true,
       "category_allowed": true,
@@ -51,8 +55,9 @@
   },
   {
     "run_id": "run-allowed-001",
+    "sequence": 5,
     "type": "decision_recorded",
-    "at": "2026-05-26T20:57:45.873Z",
+    "at": "dry-run-sequence-005",
     "data": {
       "decision": "approval_required",
       "reason": "Candidate satisfies policy checks, but human approval is required before irreversible purchase."

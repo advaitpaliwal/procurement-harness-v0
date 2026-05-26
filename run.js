@@ -14,11 +14,12 @@ function asList(value) {
   return Array.isArray(value) ? value : [];
 }
 
-function event(runId, type, data) {
+function event(runId, sequence, type, data) {
   return {
     run_id: runId,
+    sequence,
     type,
-    at: new Date().toISOString(),
+    at: `dry-run-sequence-${String(sequence).padStart(3, "0")}`,
     data
   };
 }
@@ -42,21 +43,21 @@ function evaluate(input) {
   const priceStable = checkoutTotal === price;
   const receiptFieldsConfigured = asList(input.required_receipt_fields).length > 0;
   const events = [
-    event(input.run_id, "policy_loaded", {
+    event(input.run_id, 1, "policy_loaded", {
       max_budget_usd: maxBudget,
       allowed_merchants: allowedMerchants,
       prohibited_categories: prohibitedCategories
     }),
-    event(input.run_id, "candidate_selected", {
+    event(input.run_id, 2, "candidate_selected", {
       merchant: candidate.merchant,
       item: candidate.item,
       category: candidate.category,
       price_usd: price
     }),
-    event(input.run_id, "checkout_total_seen", {
+    event(input.run_id, 3, "checkout_total_seen", {
       checkout_total_usd: checkoutTotal
     }),
-    event(input.run_id, "policy_checked", {
+    event(input.run_id, 4, "policy_checked", {
       merchant_allowed: merchantAllowed,
       category_allowed: categoryAllowed,
       within_budget: withinBudget,
@@ -92,7 +93,7 @@ function evaluate(input) {
     reason = "Candidate satisfies policy checks and policy does not require manual approval.";
   }
 
-  events.push(event(input.run_id, "decision_recorded", { decision, reason }));
+  events.push(event(input.run_id, 5, "decision_recorded", { decision, reason }));
 
   const packet = {
     policy_version: "v0.2-evented",
