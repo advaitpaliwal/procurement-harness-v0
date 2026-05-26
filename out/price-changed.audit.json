@@ -1,0 +1,33 @@
+{
+  "policy_version": "v0.2-evented",
+  "run_id": "run-price-changed-001",
+  "purchase_goal": "Buy one small test purchase after confirming listed price.",
+  "candidate_item": "test widget",
+  "candidate_merchant": "Demo Shop",
+  "candidate_category": "developer-tooling",
+  "candidate_price_usd": 20,
+  "checkout_total_usd": 31,
+  "max_budget_usd": 35,
+  "checks": {
+    "merchant_allowed": true,
+    "category_allowed": true,
+    "within_budget": true,
+    "checkout_within_budget": true,
+    "price_stable": false,
+    "receipt_fields_configured": true
+  },
+  "decision": "rejected",
+  "reason": "Checkout total differs from the selected candidate price.",
+  "approval_required": false,
+  "receipt_redaction_status": "not_applicable",
+  "required_receipt_fields": [
+    "merchant",
+    "item",
+    "price",
+    "timestamp",
+    "last4",
+    "authorization_status"
+  ],
+  "event_count": 5,
+  "event_log_sha256": "9c5bb6e6274f5b1b9fc6c0851bd0deb9fe96a81f84a2248061f5d5081880a8b0"
+}

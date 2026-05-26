@@ -1,0 +1,15 @@
+{
+  "run_id": "run-prohibited-001",
+  "purchase_goal": "Buy a gift card for later testing.",
+  "max_budget_usd": 50,
+  "allowed_merchants": ["Amazon"],
+  "prohibited_categories": ["weapons", "gambling", "adult", "cash-equivalent"],
+  "required_receipt_fields": ["merchant", "item", "price", "timestamp", "last4", "authorization_status"],
+  "human_approval_required": true,
+  "candidate": {
+    "merchant": "Amazon",
+    "item": "digital gift card",
+    "category": "cash-equivalent",
+    "price_usd": 25
+  }
+}

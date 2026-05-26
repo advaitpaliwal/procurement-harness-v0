@@ -1,0 +1,61 @@
+[
+  {
+    "run_id": "run-over-budget-001",
+    "type": "policy_loaded",
+    "at": "2026-05-26T20:57:45.876Z",
+    "data": {
+      "max_budget_usd": 25,
+      "allowed_merchants": [
+        "BrowserStack",
+        "Playwright Cloud"
+      ],
+      "prohibited_categories": [
+        "weapons",
+        "gambling",
+        "adult",
+        "cash-equivalent"
+      ]
+    }
+  },
+  {
+    "run_id": "run-over-budget-001",
+    "type": "candidate_selected",
+    "at": "2026-05-26T20:57:45.876Z",
+    "data": {
+      "merchant": "BrowserStack",
+      "item": "monthly team plan",
+      "category": "developer-tooling",
+      "price_usd": 199
+    }
+  },
+  {
+    "run_id": "run-over-budget-001",
+    "type": "checkout_total_seen",
+    "at": "2026-05-26T20:57:45.876Z",
+    "data": {
+      "checkout_total_usd": 199
+    }
+  },
+  {
+    "run_id": "run-over-budget-001",
+    "type": "policy_checked",
+    "at": "2026-05-26T20:57:45.876Z",
+    "data": {
+      "merchant_allowed": true,
+      "category_allowed": true,
+      "within_budget": false,
+      "checkout_within_budget": false,
+      "price_stable": true,
+      "receipt_fields_configured": true
+    }
+  },
+  {
+    "run_id": "run-over-budget-001",
+    "type": "decision_recorded",
+    "at": "2026-05-26T20:57:45.876Z",
+    "data": {
+      "decision": "rejected",
+      "reason": "Candidate price exceeds the maximum budget."
+    }
+  }
+]

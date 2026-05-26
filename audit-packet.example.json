@@ -1,0 +1,20 @@
+{
+  "run_id": "run-allowed-001",
+  "purchase_goal": "Buy one domain for a public procurement-harness demo page.",
+  "candidate_item": "procurement-harness-demo.example",
+  "candidate_merchant": "Cloudflare Registrar",
+  "candidate_category": "domain",
+  "candidate_price_usd": 12,
+  "max_budget_usd": 20,
+  "checks": {
+    "merchant_allowed": true,
+    "category_allowed": true,
+    "within_budget": true,
+    "receipt_fields_configured": true
+  },
+  "decision": "approval_required",
+  "reason": "Candidate satisfies policy checks, but human approval is required before irreversible purchase.",
+  "approval_required": true,
+  "receipt_redaction_status": "pending_purchase",
+  "required_receipt_fields": ["merchant", "item", "price", "timestamp", "last4", "authorization_status"]
+}

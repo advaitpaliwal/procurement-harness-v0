@@ -1,0 +1,60 @@
+[
+  {
+    "run_id": "run-price-changed-001",
+    "type": "policy_loaded",
+    "at": "2026-05-26T20:57:45.876Z",
+    "data": {
+      "max_budget_usd": 35,
+      "allowed_merchants": [
+        "Demo Shop"
+      ],
+      "prohibited_categories": [
+        "weapons",
+        "gambling",
+        "adult",
+        "cash-equivalent"
+      ]
+    }
+  },
+  {
+    "run_id": "run-price-changed-001",
+    "type": "candidate_selected",
+    "at": "2026-05-26T20:57:45.876Z",
+    "data": {
+      "merchant": "Demo Shop",
+      "item": "test widget",
+      "category": "developer-tooling",
+      "price_usd": 20
+    }
+  },
+  {
+    "run_id": "run-price-changed-001",
+    "type": "checkout_total_seen",
+    "at": "2026-05-26T20:57:45.876Z",
+    "data": {
+      "checkout_total_usd": 31
+    }
+  },
+  {
+    "run_id": "run-price-changed-001",
+    "type": "policy_checked",
+    "at": "2026-05-26T20:57:45.876Z",
+    "data": {
+      "merchant_allowed": true,
+      "category_allowed": true,
+      "within_budget": true,
+      "checkout_within_budget": true,
+      "price_stable": false,
+      "receipt_fields_configured": true
+    }
+  },
+  {
+    "run_id": "run-price-changed-001",
+    "type": "decision_recorded",
+    "at": "2026-05-26T20:57:45.876Z",
+    "data": {
+      "decision": "rejected",
+      "reason": "Checkout total differs from the selected candidate price."
+    }
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "policy_version": "v0.2-evented",
+  "run_id": "run-over-budget-001",
+  "purchase_goal": "Buy one browser automation testing subscription for a demo.",
+  "candidate_item": "monthly team plan",
+  "candidate_merchant": "BrowserStack",
+  "candidate_category": "developer-tooling",
+  "candidate_price_usd": 199,
+  "checkout_total_usd": 199,
+  "max_budget_usd": 25,
+  "checks": {
+    "merchant_allowed": true,
+    "category_allowed": true,
+    "within_budget": false,
+    "checkout_within_budget": false,
+    "price_stable": true,
+    "receipt_fields_configured": true
+  },
+  "decision": "rejected",
+  "reason": "Candidate price exceeds the maximum budget.",
+  "approval_required": false,
+  "receipt_redaction_status": "not_applicable",
+  "required_receipt_fields": [
+    "merchant",
+    "item",
+    "price",
+    "timestamp",
+    "last4",
+    "authorization_status"
+  ],
+  "event_count": 5,
+  "event_log_sha256": "d15e952ef58b5ca7d04cf04b6d1a09cc823456083704acb562d6d7ee59b39540"
+}

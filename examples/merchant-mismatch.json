@@ -1,0 +1,15 @@
+{
+  "run_id": "run-merchant-mismatch-001",
+  "purchase_goal": "Buy one approved testing tool subscription.",
+  "max_budget_usd": 40,
+  "allowed_merchants": ["Approved Testing Tool"],
+  "prohibited_categories": ["weapons", "gambling", "adult", "cash-equivalent"],
+  "required_receipt_fields": ["merchant", "item", "price", "timestamp", "last4", "authorization_status"],
+  "human_approval_required": true,
+  "candidate": {
+    "merchant": "Lookalike Testing Tool",
+    "item": "starter test plan",
+    "category": "developer-tooling",
+    "price_usd": 19
+  }
+}

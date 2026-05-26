@@ -1,0 +1,16 @@
+{
+  "run_id": "run-price-changed-001",
+  "purchase_goal": "Buy one small test purchase after confirming listed price.",
+  "max_budget_usd": 35,
+  "allowed_merchants": ["Demo Shop"],
+  "prohibited_categories": ["weapons", "gambling", "adult", "cash-equivalent"],
+  "required_receipt_fields": ["merchant", "item", "price", "timestamp", "last4", "authorization_status"],
+  "human_approval_required": true,
+  "candidate": {
+    "merchant": "Demo Shop",
+    "item": "test widget",
+    "category": "developer-tooling",
+    "price_usd": 20,
+    "checkout_total_usd": 31
+  }
+}

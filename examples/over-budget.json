@@ -1,0 +1,15 @@
+{
+  "run_id": "run-over-budget-001",
+  "purchase_goal": "Buy one browser automation testing subscription for a demo.",
+  "max_budget_usd": 25,
+  "allowed_merchants": ["BrowserStack", "Playwright Cloud"],
+  "prohibited_categories": ["weapons", "gambling", "adult", "cash-equivalent"],
+  "required_receipt_fields": ["merchant", "item", "price", "timestamp", "last4", "authorization_status"],
+  "human_approval_required": true,
+  "candidate": {
+    "merchant": "BrowserStack",
+    "item": "monthly team plan",
+    "category": "developer-tooling",
+    "price_usd": 199
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "run-allowed-001",
+  "purchase_goal": "Buy one domain for a public procurement-harness demo page.",
+  "max_budget_usd": 20,
+  "allowed_merchants": ["Namecheap", "Cloudflare Registrar"],
+  "prohibited_categories": ["weapons", "gambling", "adult", "cash-equivalent"],
+  "required_receipt_fields": ["merchant", "item", "price", "timestamp", "last4", "authorization_status"],
+  "human_approval_required": true,
+  "candidate": {
+    "merchant": "Cloudflare Registrar",
+    "item": "procurement-harness-demo.example",
+    "category": "domain",
+    "price_usd": 12
+  }
+}

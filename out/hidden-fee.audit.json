@@ -1,0 +1,33 @@
+{
+  "policy_version": "v0.2-evented",
+  "run_id": "run-hidden-fee-001",
+  "purchase_goal": "Buy one demo domain while keeping total checkout cost under budget.",
+  "candidate_item": "agent-procurement-demo.example",
+  "candidate_merchant": "Example Registrar",
+  "candidate_category": "domain",
+  "candidate_price_usd": 12,
+  "checkout_total_usd": 18,
+  "max_budget_usd": 15,
+  "checks": {
+    "merchant_allowed": true,
+    "category_allowed": true,
+    "within_budget": true,
+    "checkout_within_budget": false,
+    "price_stable": false,
+    "receipt_fields_configured": true
+  },
+  "decision": "rejected",
+  "reason": "Checkout total exceeds the maximum budget.",
+  "approval_required": false,
+  "receipt_redaction_status": "not_applicable",
+  "required_receipt_fields": [
+    "merchant",
+    "item",
+    "price",
+    "timestamp",
+    "last4",
+    "authorization_status"
+  ],
+  "event_count": 5,
+  "event_log_sha256": "12622144cd451c0d561a50d4ce4fdf3f7dbca38642e89eaf09f998a3f32e162f"
+}
